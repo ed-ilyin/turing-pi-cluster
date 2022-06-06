@@ -15,7 +15,7 @@
   helm:
     name: minecraft
     chart_ref: itzg/minecraft
-    chart_version: '2.0.7'
+    chart_version: '4.0.0'
     release_namespace: minecraft
     state: present
     values:

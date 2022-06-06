@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
         - name: mariadb
-          image: tobi312/rpi-mariadb:10.3
+          image: tobi312/rpi-mariadb:10.6-alpine
           ports:
             - containerPort: 3306
           env:

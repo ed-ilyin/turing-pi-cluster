@@ -6,8 +6,8 @@ ansible_user: pirate
 helm_arch: arm
 
 # Turing Pi.
-ingress_server_ip: 10.0.100.75
-load_balancer_server_ip: 10.0.100.99
+ingress_server_ip: 192.168.50.22
+load_balancer_server_ip: 192.168.50.23
 
 # Dramble.
 # ingress_server_ip: 10.0.100.83
