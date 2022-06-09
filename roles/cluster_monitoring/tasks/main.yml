@@ -8,7 +8,7 @@
   block:
     - name: Clone the cluster-monitoring project.
       git:
-        repo: https://github.com/carlosedp/cluster-monitoring.git
+        repo: https://github.com/ed-ilyin/cluster-monitoring.git
         dest: ~/cluster-monitoring
         version: "{{ cluster_monitoring_version }}"
         force: yes

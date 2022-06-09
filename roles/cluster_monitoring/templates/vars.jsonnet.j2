@@ -32,7 +32,7 @@
     },
     {
       name: 'traefikExporter',
-      enabled: false,
+      enabled: true,
       file: import 'modules/traefik.jsonnet',
     },
     {
@@ -42,7 +42,7 @@
     },
     {
       name: 'speedtestExporter',
-      enabled: false,
+      enabled: true,
       file: import 'modules/speedtest_exporter.jsonnet',
     },
   ],
@@ -68,13 +68,13 @@
   // Persistent volume configuration
   enablePersistence: {
     // Setting these to false, defaults to emptyDirs.
-    prometheus: false,
-    grafana: false,
+    prometheus: true,
+    grafana: true,
     // If using a pre-created PV, fill in the names below. If blank, they will use the default StorageClass
     prometheusPV: '',
     grafanaPV: '',
     // If required to use a specific storageClass, keep the PV names above blank and fill the storageClass name below.
-    storageClass: '',
+    storageClass: 'local-path',
     // Define the PV sizes below
     prometheusSizePV: '2Gi',
     grafanaSizePV: '20Gi',
@@ -83,7 +83,7 @@
   // Configuration for Prometheus deployment
   prometheus: {
     retention: '15d',
-    scrapeInterval: '30s',
+    scrapeInterval: '2m',
     scrapeTimeout: '30s',
   },
   grafana: {
