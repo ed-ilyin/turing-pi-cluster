@@ -32,7 +32,7 @@
     },
     {
       name: 'traefikExporter',
-      enabled: true,
+      enabled: false,
       file: import 'modules/traefik.jsonnet',
     },
     {
@@ -42,7 +42,7 @@
     },
     {
       name: 'speedtestExporter',
-      enabled: true,
+      enabled: false,
       file: import 'modules/speedtest_exporter.jsonnet',
     },
   ],
@@ -83,7 +83,7 @@
   // Configuration for Prometheus deployment
   prometheus: {
     retention: '15d',
-    scrapeInterval: '2m',
+    scrapeInterval: '5m',
     scrapeTimeout: '30s',
   },
   grafana: {

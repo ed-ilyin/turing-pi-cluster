@@ -1,7 +1,7 @@
 ---
 # The version of the cluster-monitoring repo to check out. See commits:
 # https://github.com/ed-ilyin/cluster-monitoring/commits/master
-cluster_monitoring_version: 436b8a6
+cluster_monitoring_version: a2d4e15
 
 # Whether to force updating the cluster-monitoring repository. Set this to true
 # if you change the cluster_monitoring_version above.
