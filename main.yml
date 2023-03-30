@@ -30,8 +30,8 @@
     - role: wordpress
       tags: ['wordpress']
 
-    # - role: minecraft
-    #   tags: ['minecraft']
+    - role: minecraft
+      tags: ['minecraft']
 
     - role: pihole
       tags: ['pihole']

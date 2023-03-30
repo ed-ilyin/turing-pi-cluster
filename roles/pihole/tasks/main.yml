@@ -23,6 +23,8 @@
         enabled: true
       ingress:
         enabled: true
+        hosts:
+          - pi.hole
       serviceWeb:
         loadBalancerIP: '{{ load_balancer_server_ip }}'
         type: LoadBalancer
@@ -40,8 +42,7 @@
       adminPassword: admin
       extraEnvVars:
         DNSMASQ_USER: root
-      podDnsConfig:
-        enabled: true
-        policy: "None"
-        nameservers:
-          - 192.168.50.1
+      # -- default upstream DNS 1 server to use
+      DNS1: 192.168.50.1
+      # -- default upstream DNS 2 server to use
+      DNS2: "8.8.8.8"
